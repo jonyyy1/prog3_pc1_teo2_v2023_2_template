@@ -152,7 +152,7 @@ Restricciones:
   std::list<int> l1 = {6, 8, 2, 4};
   auto [maximum, minimums] = find_max_of_min_of_concatenated(v1, v2, l1);
   cout << maximum << endl;                // 2
-  for (const auto& item: minimums) {      // 1 2 3
+  for (const auto& item: minimums) {      // 1 2 2
     cout << item << " ";
   }
   cout << endl;
