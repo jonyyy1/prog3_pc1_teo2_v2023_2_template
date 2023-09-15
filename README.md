@@ -151,8 +151,8 @@ Restricciones:
   std::vector<int> v2 = {1, 8, 3, 5};
   std::list<int> l1 = {6, 8, 2, 4};
   auto [maximum, minimums] = find_max_of_min_of_concatenated(v1, v2, l1);
-  cout << maximum << endl;
-  for (const auto& item: minimums) {
+  cout << maximum << endl;                // 2
+  for (const auto& item: minimums) {      // 1 2 3
     cout << item << " ";
   }
   cout << endl;
@@ -167,8 +167,8 @@ Restricciones:
   std::list<double> l3 = {4, 2.4};
   std::list<double> l4 = {8, 2.1, 4};
   auto [maximum, minimums] = find_max_of_min_of_concatenated(v1, v2, l1, l2, l3, l4);
-  cout << maximum << endl;
-  for (const auto& item: minimums) {
+  cout << maximum << endl;                  // 3.5
+  for (const auto& item: minimums) {        // 1.1 1.5 2.1 2.4 3 3.5
     cout << item << " ";
   }
   cout << endl;
@@ -178,8 +178,8 @@ Restricciones:
 ```cpp
   std::vector<double> v1 = {5, 7, 9, 3.5};
   auto [maximum, minimums] = find_max_of_min_of_concatenated(v1);
-  cout << maximum << endl;
-  for (const auto& item: minimums) {
+  cout << maximum << endl;                  // 3.5
+  for (const auto& item: minimums) {        // 3.5
     cout << item << " ";
   }
   cout << endl;
@@ -192,8 +192,8 @@ Restricciones:
   std::deque<float> d1 = {4, 2.4f};
   std::deque<float> d2 = {8, 2.1f, 4};
   auto [maximum, minimums] = find_max_of_min_of_concatenated<std::deque>(v1, l1, d1, d2);
-  cout << maximum << endl;
-  for (const auto& item: minimums) {
+  cout << maximum << endl;                  // 2.4
+  for (const auto& item: minimums) {        // 1.1 1.5 2.1 2.4
     cout << item << " ";
   }
   cout << endl;
